@@ -31,7 +31,7 @@ abstract class Produto {
     public abstract void mostrarDetalhesDoItem();
 
     //método concreto que faz a lógica de comparar o código de barras informado com os já existente na lista de produtos
-    public boolean comparacao(Object item){
+    public boolean equals(Object item){
         if(this == item){
             return true;
         }

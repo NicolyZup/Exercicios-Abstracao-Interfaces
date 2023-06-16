@@ -20,27 +20,28 @@ public class Loja {
         }
 
         //informando qual produto quero buscar
-        Produto produtoBuscado = itens[1];
+        Produto produtoBuscar = itens[1];
         //método com lógica de procurar produto (informo o item e a lista para procurar o item)
-        buscarProduto(produtoBuscado, itens);
+        buscarProduto(produtoBuscar, itens);
 
         //Variáveis com os objetos igual e diferente para usar o método comparar da superclasse abstrata (Produto)
         Produto itemIgual = new CD("Luan santana", 09.99, "432ggedt6", 10);
         Produto itemDiferente = new CD("Luan santana", 09.99, "09vd09gsghnk", 10);
 
         //informando se é true ou false para produto igual e produto diferente
-        System.out.println("Produto igual: "+ produtoBuscado.comparacao(itemIgual));
-        System.out.println("Produto diferente: "+produtoBuscado.comparacao(itemDiferente));
+        System.out.println("Produto igual: "+ produtoBuscar.equals(itemIgual));
+        System.out.println("Produto diferente: "+produtoBuscar.equals(itemDiferente));
     }
 
     //método com lógica de busca de produto
-    private static void buscarProduto(Produto produtoBuscado, Produto[] produtos) {
-        for(int i=0;i < produtos.length;i++){
-            if(produtoBuscado.equals(produtos[i])){
+    private static void buscarProduto(Produto produtoBuscar, Produto[] itens) {
+        for(int i=0;i < itens.length;i++){
+            if(produtoBuscar.equals(itens[i])){
                 System.out.println("Produto informado esta na posição "+i+"° da lista.");
                 return; // return para sair do laço e retornar o método
             }
         }
         System.out.println("Produto não encontrado.");
     }
+
 }
