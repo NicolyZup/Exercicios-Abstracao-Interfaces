@@ -1,4 +1,4 @@
-# Abstração e Interfaces
+# Classes Abstratas e Interfaces
 Repositório criado para entrega dos exercícios da aula 20 do programa catalisa.
 
 ## Exercícios propostos: 
