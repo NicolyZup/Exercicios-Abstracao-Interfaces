@@ -2,7 +2,7 @@
 Repositório criado para entrega dos exercícios da aula 20 do programa catalisa.
 
 ## Exercícios propostos: 
-LISTA DE EXERCÍCIOS POO CLASSES ABSTRATAS
+### LISTA DE EXERCÍCIOS POO CLASSES ABSTRATAS
 
 1 - Crie uma hierarquia de classes para uma loja que venda livros, CDs e DVDs.
 Sobrescreva o método mostrarDetalhesDoItem para que imprima:
@@ -57,7 +57,7 @@ entrega deve contemplar as duas partes.
 
 
 
-LISTA DE EXERCÍCIOS POO INTERFACES
+### LISTA DE EXERCÍCIOS POO INTERFACES
 
 1. Siga as instruções abaixo para implementar o exercício:
 - Crie uma interface Lampada com métodos ligar() e desligar(), cujo
